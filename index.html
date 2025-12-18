@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Flow Mini Game</title>
+  <title>Neon Flow Mini Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Flow Mini Game</h1>
+<h1 class="neon-title">FLOW PROTOCOL</h1>
 
-<div class="controls">
+<div class="controls neon-panel">
   <label>
     Grid Size:
     <input type="range" min="6" max="12" value="6" id="gridSlider">
-    <span id="gridValue">6</span> × <span id="gridValue2">6</span>
+    <span id="gridValue">6</span>×<span id="gridValue2">6</span>
   </label>
+
+  <label>
+    Time Limit:
+    <input type="range" min="15" max="90" value="40" id="timeSlider">
+    <span id="timeValue">40</span>s
+  </label>
+
+  <div class="timer neon-text">
+    ⏱ <span id="timer">40</span>s
+  </div>
 </div>
 
 <div id="game"></div>
+
+<div id="message" class="neon-message"></div>
 
 <script src="game.js"></script>
 </body>
