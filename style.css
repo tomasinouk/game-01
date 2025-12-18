@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+#game {
+  display: grid;
+  margin: 20px auto;
+  gap: 2px;
+  touch-action: none;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: #222;
+  border-radius: 6px;
+}
+
+.cell.dot {
+  border-radius: 50%;
+}
+
+.cell.path {
+  opacity: 0.85;
+}
