@@ -1,32 +1,52 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #eee;
+  background: radial-gradient(circle at top, #0a0a1a, #000);
+  font-family: 'Arial Black', sans-serif;
+  color: #0ff;
   text-align: center;
 }
 
-.controls {
-  margin-bottom: 10px;
+.neon-title {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 30px #0ff;
+}
+
+.neon-panel {
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
+  width: fit-content;
+}
+
+.neon-text {
+  margin-top: 8px;
+  font-size: 18px;
 }
 
 #game {
   display: grid;
+  gap: 3px;
   margin: 20px auto;
-  gap: 2px;
-  touch-action: none;
 }
 
 .cell {
   width: 40px;
   height: 40px;
-  background: #222;
+  background: #111;
   border-radius: 6px;
 }
 
 .cell.dot {
   border-radius: 50%;
+  box-shadow: 0 0 12px currentColor;
 }
 
 .cell.path {
-  opacity: 0.85;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.neon-message {
+  font-size: 26px;
+  margin-top: 20px;
+  text-shadow: 0 0 20px currentColor;
 }
